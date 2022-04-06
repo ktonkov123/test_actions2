@@ -51,12 +51,12 @@ jobs:
       - name: deploy
         uses: actions/checkout@v2
       - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-  deployment_stage:
-    runs-on: ubuntu-latest
-    environment: staging
-    concurrency: staging
-    steps:
-      - name: deploy
-        uses: actions/checkout@v2
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+#  deployment_stage:
+#    runs-on: ubuntu-latest
+#    environment: staging
+#    concurrency: staging
+#    steps:
+#      - name: deploy
+#        uses: actions/checkout@v2
+#      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
 
